@@ -46,7 +46,7 @@ export class CarService {
                 throw new HttpException('not found!', 404)
             }
             this.cars[ind][propName] = propVal
-            return resolve(this.cars);
+            return resolve(this.cars)
         })
     }
 }
